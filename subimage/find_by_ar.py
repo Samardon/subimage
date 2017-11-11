@@ -100,7 +100,7 @@ def save_output(infile, outfile, connected_components):
   cv2.imwrite(outfile, img)
 
 def  find_by_ar_from_files(infile, ar, error):
-  img = cv2.imread(infile, cv2.CV_LOAD_IMAGE_GRAYSCALE)
+  img = cv2.imread(infile, cv2.IMREAD_GRAYSCALE)
   return find_by_ar(img, ar, error)
 
 
